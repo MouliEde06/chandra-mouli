@@ -1,0 +1,689 @@
+body{
+    margin:0px !important;
+}
+p{
+    font-size: 18px ;
+    line-height: 1.8;
+    font-family:Helvetica, sans-serif;
+}
+p span{
+    text-align: center;
+}
+
+h1{
+    font-family: sans-serif;
+    font-size:40px ;
+}
+h2{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 35px;
+}
+h3{
+    font-size:30px;
+    font-family: sans-serif;
+}
+h4{
+    text-align: center;
+    font-family: sans-serif;
+    font-size:25px;
+    font-weight: 400;
+}
+h5{
+    font-family: sans-serif;
+    font-size: 20px;
+    color:#F89A28;
+    margin:0px;
+}
+.header{
+    width:100%;
+    display: flex !important; 
+    padding-top:10px;
+    padding-bottom:10px ;
+}
+.header_col {
+    width: 100% !important;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.logo_col{
+    width:10% !important;
+}
+.navigation {
+    width: 60% !important;
+    align-items: center;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+.nav1{
+    padding:15px 25px 15px 25px;
+    margin:0 2px ;
+}
+.button1 {
+    width: 10% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    background-color: #F89A28;
+    width:150px !important;
+    height:50px !important;
+    border-radius: 5px ;
+    border:none;    
+}
+button_1
+.nav1{
+    font-family:Helvetica, sans-serif;
+    font-size:18px;
+    color:#000;
+    text-decoration: none;
+}
+.navigation a:hover{
+    border:2px solid #F89A28;
+}
+.nav1:active{
+    border:2px solid #F89A28;
+}
+.navigation a:active{
+    border:2px solid #F89A28;
+}
+.headh1 span{
+    color: #F89A28;
+    text-decoration: underline;
+}
+h2 span{
+   text-decoration: underline;
+}
+.headh1{
+    position: relative;
+    animation-duration: 4s;
+    color: #fff !important;
+}
+.hero {
+    background-image: url(../images/mit-newmobilebanner.png);
+    height: 80vh !important;
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    background-size: cover;
+    padding-left: 80px !important;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}   
+
+.hero::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-color: #000;
+    width: 94%;
+    height: 100%;
+    left: 0;
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+    bottom: 0%;
+    opacity: 0.3;
+}
+.hero_col{
+    width:40%;
+    margin-left:0 ;
+    margin-right:auto;
+    
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+.anime{
+    position: relative;
+    animation-name: top1;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+
+}
+.anime1{
+    position: relative;
+    animation-name: bottom1;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+@keyframes example{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }   
+}
+@keyframes top1{
+    0%,100%{
+        transform: translate(0,0);
+    }
+    50%{
+        transform: translate(0,-100px);
+    }
+    
+}
+@keyframes bottom1{
+    0%,100%{
+        transform: translate(0,0);
+    }
+    50%{
+        transform: translate(0,100px);
+    }
+    
+}
+@keyframes left1 {
+    0%{
+        transform: translate(0,0);
+    }
+    100%{
+        transform: translate(-300px,0);
+    }
+    
+}
+@keyframes right1 {
+    0%{
+        transform: translate(0,0);
+    }
+    100%{
+        transform: translate(300px,0);
+    }
+    
+}
+
+.button2,.button_1{
+    background-color: F89A28;
+    font-family:Helvetica, sans-serif;
+    font-size: 18px !important;
+    text-decoration: none;
+    color:#fff;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transition: color 0.4s ease;
+
+}
+.button2::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left:-100%;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: -1;
+    transition: left 0.4s ease;
+
+}
+
+.button2:hover,.button_1:hover{
+         color: #fff;  
+}
+.button2:hover::before{
+    left:0;
+}
+.button_1::before{
+    content: "";
+    position: absolute;
+    bottom:-100%;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: -1;
+    transition: bottom 0.4s ease;
+}
+.button_1:hover::before{
+    bottom:0;
+}
+.heading{
+text-align: left !important;
+margin: 0px !important;
+}
+.heading  span{
+    color:#F89A28 !important;
+}
+.heading1 span{
+    color:#F89A28 !important;
+}
+
+.media_content{
+    width:50% !important;
+    display: flex;
+    justify-content: center;
+}
+.text_content {
+    width: 50%;
+    display: flex;
+    padding: 40px 40px 40px 80px ;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    animation-name: right1;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+.img1{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    animation-name: left1;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+.img1::before {
+    content: '';
+    position: absolute;
+    top: -21px;
+    left: 53px;
+    width: 549px;
+    height: 92%;
+    z-index: -1;
+    border: 4px solid #F89A28 !important;
+}
+.img1::after {
+    content: '';
+    position: absolute;
+    top: 26px;
+    left: 116px;
+    width: 541px;
+    height: 97%;
+    z-index: -1;
+    border: 4px solid #F89A28 !important;
+}
+.heading1{
+    text-align: center !important;
+    margin: 0px !important;
+}
+.img_12{
+    background-image: url(../images/caseStudyStory.png);
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    background-size: cover;
+    height:auto ;
+    width:50%;
+}
+.cta {
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    flex-direction: row-reverse;
+}
+.heading2{
+    color: #fff;
+    text-align: left !important;
+    margin:0px ;
+}
+.heading2 span{
+    color:#F89A28 !important;   
+    
+}
+.para span{
+  color: #fff !important;
+}
+
+.button3{
+    background-color: transparent;
+    font-family:Helvetica, sans-serif;
+    font-size: 18px !important;
+    text-decoration: none;
+    color:#fff;
+    overflow: hidden;
+    transition: height 0.2s 0.35s ease-out;
+    border: 1px solid #fff;
+}
+
+.button3:hover{
+     height: 100%;
+     transition-delay: 0.3s;
+}
+.cta1 {
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    flex-direction: row;
+   
+}
+.img_123{
+    background-image: url(../images/spotlight\ \(1\).png);
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    background-size: cover;
+    height:auto ;
+    width:50%;
+}
+.usps{
+    padding:60px 0px 60px 0px;
+}
+.usps_col{
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}   
+.usps_img{
+    width:60px ;
+    height:auto;
+}
+.usps_subcol1 {
+    width: 25%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    margin:10px !important;
+    border-radius: 10px;
+    transition: all .5s linear;
+}
+.usps_subcol1:hover{
+    transform: translateY(-20px);
+}
+.usps_heading{
+    margin:20px 0 10px 0;
+    text-align: center;
+    color: #000;
+}
+.usps_para{
+    text-align: center;
+    margin:0px 0 10px 0;
+}
+.photo{
+    width:30%;
+}
+.cta12{
+    border-radius:20px;
+    overflow: hidden;
+    margin-top:0px !important;
+    z-index: 1;
+    position: relative;
+}
+.technology span{
+    color:#F89A28;
+    
+}
+.para_1{
+    width:80% !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bg_img{
+    background-image: url(../images/full-shot-man-experiencing-virtual-reality_23-2149548139.avif);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    padding:0px !important;
+    overflow: hidden;
+    height: auto;
+    min-height: 300px ;
+}
+.bg_img1{
+    background-image: url(../images/image-transformation.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    padding:0px !important;
+    overflow: hidden;
+    height: auto;
+    min-height: 300px ;
+}
+.bg_img2{
+    background-image: url(../images/insight-newsliderimage.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    padding:0px !important;
+    overflow: hidden;
+    height: auto;
+    min-height: 300px ;
+}
+.bg_img3{
+    background-image: url(../images/mit-newmobilebanner.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    padding:0px !important;
+    overflow: hidden;
+    height: auto;
+    min-height: 300px ;
+}
+.pods_heading {
+    margin: 0px;
+    padding: 10px 5px;
+    background-color: #FFFFFF90;
+    position: relative;
+    min-height: 80px ;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex1{
+    display: flex !important;
+    flex-direction: column-reverse !important;
+}
+.img3{
+    display: flex;
+    justify-content: center;
+}
+.silder123{
+    width:60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+.slider{
+    padding:0px 20px;   
+}
+.call{
+    background-image: url(../images/new-cubeimage\ \(1\).png),linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) ;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height:60vh !important;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    justify-content: center;
+    background-attachment: fixed;
+}
+.call::before{
+    content: "";
+    background-color: #000;
+    opacity: 0.3;
+    width: 100%;
+    height:100%;
+    left: 0;
+    position:absolute;
+    z-index:-1;
+}
+
+.call_heading{
+    color:#fff;
+    margin: 0;
+}
+.call_heading span{
+    color: #F89A28;
+}
+.call_para{
+    text-align: center;
+    color: #fff;
+}
+.button4:hover{
+    border:1px solid #fff;
+}
+.footer_maincol{
+    width:70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer_heading{
+    text-align: left;
+    margin:0;
+    font-weight: 700;
+}
+.footer_maincol{
+    display: flex;
+}
+.footer_col{
+    width:25% ;
+}
+.footer_nav{
+    display: flex;
+    flex-direction: column;
+}
+.footer_nav a{
+    color: #000;
+    font-family:Helvetica, sans-serif;
+    font-size: 18px ;
+    text-decoration: none;
+    margin-top:10px;
+}
+.footer_nav a:hover{
+    color:#F89A28;
+}
+
+.wave {
+    position: relative;
+    overflow: hidden;
+  }
+ 
+  .wave::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 80%;
+    border: 1px solid #000;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    animation: pulse-wave 3s infinite ease;
+    z-index:0;
+  }
+ 
+  .wave::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 80%;
+    border: 1px solid #000;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    animation: pulse-wave 4s infinite ease;
+    z-index:0;  }
+ 
+  .wave:nth-child(3) {
+    animation-delay: 1s;
+  }
+  .wave2::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 80%;
+    border: 1px solid #000;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    animation: pulse-wave 5s infinite ease;
+    z-index:0;  }
+ 
+  .wave:nth-child(3) {
+    animation-delay: 1s;
+  }
+ 
+  @keyframes pulse-wave {
+    0% {
+      transform: translate(-50%, -50%) scale(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(2);
+      opacity: 0;
+    }
+  }
+.button_1234{
+    background-color: #F89A28;
+    font-size: 18px;
+    font-family: sans-serif;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s;
+    border-radius: 0px;
+}
+.span1{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition: 0.3s;
+   
+}
+
+.button_1234:hover .span1{
+    width: 100%;
+}
+
+.span2{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 2px;
+    height: 0%;
+    background-color: #fff;
+    transition: 0.3s;
+   
+
+}
+.button_1234:hover .span2{
+    height: 100%;
+    transition-delay: 0.3s;
+}
+.span3{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 0px;
+    height: 2px;
+    background-color: #fff;
+    transition: 0.3s;
+   
+
+}
+.button_1234:hover .span3{
+    width: 100%;
+    transition-delay: 0.6s;
+}
+
+.span4{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 2px;
+    height: 0px;
+    background-color: #fff;
+    transition: 0.3s;
+}
+.button_1234:hover .span4{
+    height: 100%;
+    transition-delay: 0.9s;
+}
+.button_1234:hover{
+    background-color: green;
+    transition-delay: 1.2s;
+    color: #fff;
+}

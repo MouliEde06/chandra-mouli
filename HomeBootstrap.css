@@ -1,0 +1,355 @@
+body{
+    font-family: sans-serif;
+    font-size: 18px;
+}
+p{
+    font-size: 18px ;
+    line-height: 1.8;
+    font-family:Helvetica, sans-serif;
+}
+p span{
+    text-align: center;
+}
+h1{
+    font-family: sans-serif;
+    font-size:40px ;
+}
+h2{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+}
+h3{
+    font-size:25px;
+    font-family: sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+h4{
+    text-align: center;
+    font-family: sans-serif;
+    font-size:25px;
+    font-weight: 400;
+}
+h5{
+    font-family: sans-serif;
+    font-size: 20px;
+    color:#F89A28;
+    margin:0px;
+}
+h2 span,h1 span{
+    color: #F89A28;
+    text-decoration: underline;
+    text-align: left;
+}
+
+.nav-link{
+    font-family: sans-serif !important;
+    font-size: 18px !important;
+}
+.hero{
+    background-image: url(../images/mit-newmobilebanner.png);
+    background-repeat: no-repeat;
+    height: 80vh;
+    background-position: 100% 0%;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-color: #000;
+    width: 94%;
+    height: 100%;
+    left: 0;
+    clip-path: polygon(0 0, 100% 0, 29% 100%, 0% 100%);
+    bottom: 0%;
+    opacity: 0.3;
+}
+.headh1{
+    position: relative;
+    animation-duration: 4s;
+    color: #fff !important;
+}
+button{
+    background-color: #F89A28;
+    width:150px !important;
+    height:50px !important;
+    border-radius: 5px ;
+    border:none;    
+}
+.button_1,.button2{
+    background-color: F89A28;
+    font-family:Helvetica, sans-serif;
+    font-size: 18px !important;
+    text-decoration: none;
+    color:#fff;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transition: color 0.4s ease;
+}   
+.button_1:hover{
+    color: #fff; 
+}
+.button_1::before{
+    content: "";
+    position: absolute;
+    bottom:-100%;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: -1;
+    transition: bottom 0.4s ease;
+}
+.button_1:hover::before{
+    bottom:0;
+}
+.button2::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left:-100%;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: -1;
+    transition: left 0.4s ease;
+
+}
+.button2:hover,.button_1:hover{
+         color: #fff;  
+}
+.button2:hover::before{
+    left:0;
+}
+.offcanvas-header .btn-close {
+    width: 60px !important;
+}
+.img1{
+    position: relative;
+    z-index: 1;
+}
+.img1::before {
+    content: '';
+    position: absolute;
+    top: -21px;
+    left: -2%;
+    width: 94%;
+    height: 100%;
+    z-index: -1;
+    border: 4px solid #F89A28 !important;
+}
+.img1::after {
+    content: '';
+    position: absolute;
+    top: 6%;
+    left: 7%;
+    width: 95%;
+    height: 100%;
+    z-index: -1;
+    border: 4px solid #F89A28 !important;
+}
+.navbar-toggler{
+    color: transparent;
+}
+.img_12{
+    background-image: url(../images/caseStudyStory.png);
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    background-size: cover;
+    height:auto ;
+    min-height: 200px;
+}
+.img_123{
+    background-image: url(../images/spotlight\ \(1\).png);
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    background-size: cover;
+    min-height: 300px;   
+}
+.usps_subcol1 {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 10px;
+}
+.usps_img{
+    width:60px ;
+    height:auto;
+}
+.bg_img{
+    background-image: url(../images/full-shot-man-experiencing-virtual-reality_23-2149548139.avif);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    padding:0px !important;
+    overflow: hidden;
+    height: auto;
+    min-height: 300px ;
+}
+.bg_img1{
+    background-image: url(../images/image-transformation.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    padding:0px !important;
+    overflow: hidden;
+    height: auto;
+    background-size: cover;
+    min-height: 300px ;
+}
+.bg_img2{
+    background-image: url(../images/insight-newsliderimage.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    padding:0px !important;
+    overflow: hidden;
+    height: auto;
+    min-height: 300px ;
+}
+.bg_img3{
+    background-image: url(../images/mit-newmobilebanner.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    padding:0px !important;
+    overflow: hidden;
+    height: auto;
+    min-height: 300px ;
+}
+.pods_heading{
+    background-color: #FFFFFF90;
+    margin: 0;
+    min-height: 92px;
+}
+.call{
+    background-image: url(../images/new-cubeimage\ \(1\).png),linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) ;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height:70vh !important;
+    position: relative;
+    z-index: 1;
+    background-attachment: fixed    ;
+}
+.call::before{
+    content: "";
+    background-color: #000;
+    opacity: 0.3;
+    width: 100%;
+    height:100%;
+    left: 0;
+    position:absolute;
+    z-index:-1;
+}   
+.button_1234{
+    background-color: #F89A28;
+    font-size: 18px;
+    font-family: sans-serif;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s;
+    border-radius: 0px;
+}
+.span1{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+.button_1234:hover .span1{
+    width: 100%;
+}
+.span2{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 2px;
+    height: 0%;
+    background-color: #fff;
+    transition: 0.3s;
+}
+.button_1234:hover .span2{
+    height: 100%;
+    transition-delay: 0.3s;
+}
+.span3{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 0px;
+    height: 2px;
+    background-color: #fff;
+    transition: 0.3s;
+}
+.button_1234:hover .span3{
+    width: 100%;
+    transition-delay: 0.6s;
+}
+.span4{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 2px;
+    height: 0px;
+    background-color: #fff;
+    transition: 0.3s;
+}
+.button_1234:hover .span4{
+    height: 100%;
+    transition-delay: 0.9s;
+}
+.button_1234:hover{
+    background-color: green;
+    transition-delay: 1.2s;
+    color: #fff;
+}
+@media only screen and (min-width: 250px) and (max-width: 767px) {
+    h1{
+        font-size: 35px;
+    }
+    h1 span{
+        font-size: 35px;
+    }
+    p{
+        font-size: 16px;
+    }
+    .hero::before{
+       display: none;
+    }
+    .img1::before {
+        content: '';
+        position: absolute;
+        top: -10px;
+        left: -4%;
+        width: 94%;
+        height: 100%;
+        z-index: -1;
+        border: 4px solid #F89A28 !important;
+    }
+    .img1::after {
+        content: '';
+        position: absolute;
+        top: 6%;
+        left: 10%;
+        width: 95%;
+        height: 100%;
+        z-index: -1;
+        border: 4px solid #F89A28 !important;
+    }
+    .heading_2{
+        font-size: 28px !important;
+    }
+    .cta_heading {
+        font-size: 25px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .heading_2{
+        font-size: 28px !important;
+    }
+}
